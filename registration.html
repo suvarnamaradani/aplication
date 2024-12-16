@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Occasion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Family Occasion Details</h2>
+        
+        <h3>Family Members</h3>
+        <form id="familyForm">
+            <div>
+                <label for="memberName">Name</label>
+                <input type="text" id="memberName" name="memberName" required>
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="gender">Gender</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="button" id="addMemberBtn">Add Member</button>
+        </form>
+        
+        <ul id="familyList"></ul>
+        
+        <h3>Checklist</h3>
+        <form id="checklistForm">
+            <div>
+                <input type="checkbox" id="food" name="item">
+                <label for="food">Food</label>
+            </div>
+            <div>
+                <input type="checkbox" id="decorations" name="item">
+                <label for="decorations">Decorations</label>
+            </div>
+            <div>
+                <input type="checkbox" id="gifts" name="item">
+                <label for="gifts">Gifts</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="item">
+                <label for="music">Music</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
